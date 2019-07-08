@@ -19,7 +19,7 @@ for x,y in dic2.items():
     new[x]=y
 print('使用items得到的新字典是',new)
 
-'''
+
 #2.使用dict的update方法
 
 # dic1.update(dic2)
@@ -37,7 +37,17 @@ print('使用items得到的新字典是',new)
 dic3={'name':'xiao','age':19,'aaa':123}
 #del(dic3['aaa'])
 
-print('新的字典',dic3)
+#print('新的字典',dic3)
 
+#问题3，使用Pop和del删除字典中的key
 
+dic={'name':'xiao','age':19,'aaa':123}
 
+dic.pop('name')
+
+print('新的字典',dic)
+
+'''
+dic={'name':'xiao','age':19,'aaa':123}
+del(dic['age'])
+print(dic)
